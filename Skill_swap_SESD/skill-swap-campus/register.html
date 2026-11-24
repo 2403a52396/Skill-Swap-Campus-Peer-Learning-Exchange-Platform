@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create account | Skill Swap Campus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/auth.css">
+</head>
+<body><div id="site-header"></div><main class="auth-page register-page"><div class="auth-shell register-shell"><aside class="auth-aside"><span class="eyebrow eyebrow-light">Make knowledge go further</span><h1>Teach a little.<br>Learn a lot.</h1><p>Your skills are valuable. Find people who want to learn them, and discover what they can teach you in return.</p><div class="aside-stat"><strong>01</strong><span>Share the skills you have</span></div><div class="aside-stat"><strong>02</strong><span>Tell us what you want to learn</span></div><div class="aside-stat"><strong>03</strong><span>Meet, swap and grow together</span></div></aside><section class="auth-panel register-panel"><div class="auth-heading"><span class="eyebrow">Join Skill Swap Campus</span><h2>Create your student profile</h2><p>All fields are required unless marked optional.</p></div><div id="form-message" class="form-message" role="status" aria-live="polite"></div><form id="register-form" class="form-grid" novalidate>
+  <div class="field"><label for="fullName">Full name</label><input id="fullName" name="fullName" autocomplete="name" maxlength="70" required placeholder="e.g. Maya Patel"></div>
+  <div class="field"><label for="email">College email</label><input id="email" name="email" type="email" autocomplete="email" maxlength="120" required placeholder="you@college.edu"></div>
+  <div class="field"><label for="studentId">Student ID</label><input id="studentId" name="studentId" maxlength="40" required placeholder="e.g. STU-2048"></div>
+  <div class="field"><label for="department">Department</label><select id="department" name="department" required><option value="">Select department</option><option>Computer Science</option><option>Business Administration</option><option>Design & Media</option><option>Engineering</option><option>Arts & Humanities</option><option>Science</option><option>Other</option></select></div>
+  <div class="field"><label for="year">Year of study</label><select id="year" name="year" required><option value="">Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option><option>Postgraduate</option></select></div>
+  <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required placeholder="At least 8 characters"></div>
+  <div class="field"><label for="confirmPassword">Confirm password</label><input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required placeholder="Enter it again"></div>
+  <div class="field field-wide"><label for="skillsTeach">Skills I can teach</label><input id="skillsTeach" name="skillsTeach" maxlength="240" required placeholder="e.g. Python, public speaking"><small>Separate skills with commas.</small></div>
+  <div class="field field-wide"><label for="skillsWant">Skills I want to learn</label><input id="skillsWant" name="skillsWant" maxlength="240" required placeholder="e.g. Figma, conversational French"><small>Separate skills with commas.</small></div>
+  <div class="field-wide"><button class="button button-primary button-full" type="submit">Create my account <i class="fa-solid fa-arrow-right"></i></button></div>
+</form><p class="auth-switch">Already registered? <a href="login.html">Log in</a></p><p class="security-note"><i class="fa-solid fa-shield-halved"></i> Academic demo: account data stays in this browser and is not secure for real use.</p></section></div></main><div id="site-footer"></div><script src="js/app.js"></script><script src="js/auth.js"></script></body>
+</html>
